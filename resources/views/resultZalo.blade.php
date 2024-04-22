@@ -54,12 +54,14 @@
     <!-- <link rel="stylesheet" href="https://ungdungsoida.netlify.app/contain/css/style.css" /> -->
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="/assets/aos/aos.css">
     <link rel="stylesheet" href="/styles/skin_screening/index.css">
     <link rel="stylesheet" href="/styles/skin_screening/responsive.css">
     <link rel="stylesheet" href="/styles/global/index.css">
     <link rel="stylesheet" href="/styles/global/global_responsive.css">
     <link rel ="stylesheet" href ="/css/welcomNew.css">
+    <link rel="stylesheet" href="/css/sanphamgoiy.css">
     <!-- ASSETS CDN SLICK -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -77,7 +79,7 @@
 }
 .content-paragraph strong {
     /* font-size: unset !important; */
-    color: red !important;
+    color: #0B5963 !important;
     /* font-weight: bold; */
 }
 
@@ -138,22 +140,22 @@
 }
 
 .tuvantongquanItem  {
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
-    color: #1c213f;
+    color: #0b5963;
     text-align: justify;
 
 
 }
 .tuvantongquanItem strong {
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight : 500;
     font-size: 14px;
     line-height: 20px;
-    color: #1c213f  !important;
+    color: #0b5963  !important;
     text-align: justify;
 
 }
@@ -265,6 +267,7 @@
 @section('contentpage')
 
 @includeIf("tuvanMinisize")
+@includeIf("tuvanchuyengia")
 
 @if ( $zaloLink != "" )
 <a  id ="zaloMessage" style ="display:none"  onclick="OpenAction('zalo')" ><div style="position:fixed;bottom:70px;right:30px; z-index:1000" class="messenger"><noscript>
@@ -402,9 +405,11 @@
     </div>
 </div> --}}
 
+
+
     <div id="b-placeholder">
         <div class="centerText recomendProduct">
-            <p>
+            <p style ="text-align: center">
                 KẾT QUẢ PHÂN TÍCH
             </p>
             <img src="/images/step3.png">
@@ -671,11 +676,11 @@
                   
                 }
                 .ConcludeItem  {
-                font-family: SFU Futura;
+                font-family: Roboto, sans-serif;
                 font-style: normal;
                 font-size: 14px;
                 line-height: 20px;
-                color: #1c213f;
+                color: #0b5963;
                 }
 
                 
@@ -767,7 +772,7 @@
 
                     </div>
                     <div class="title-larger">
-                        Tư vấn tổng quát
+                        Tư vấn tổng quát 
                     </div>
 
                 </div>
@@ -775,19 +780,19 @@
                     .titletvtq {
                     margin-right: 5px;
                     font-weight: bold;
-                    font-family: SFU Futura;
+                    font-family: Roboto, sans-serif;
                     font-style: normal;
                     font-size: 14px;
                     line-height: 20px;
-                    color: #1c213f;
+                    color: #0b5963;
                     }
                     .paragraphText{
 
-                        font-family: SFU Futura;
+                        font-family: Roboto, sans-serif;
                         font-style: normal;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #1c213f; 
+                        color: #0b5963; 
                         text-align: justify;
                        
                     }
@@ -801,51 +806,39 @@
                 padding: 10px;
             ">
 
-                    {{-- <div class ="tuvantongquanItem"> 
-                        <p class ="titletvtq">Lão hoá da: </p>
-                        <p class ="paragraphText">Làm sạch da 2 lần/ngày,bôi kem dưỡng mỗi ngày, đắp mặt nạ dưỡng ẩm 2-3 lần/tuần , tẩy tế bào chết và ngừng sử dụng các sản phẩm chăm sóc da gây dị ứng. </p>   
-                    </div>
-
-                    <div class ="tuvantongquanItem"> 
-                        <p class ="titletvtq">Mụn và mụn viêm đỏ: </p>
-                        <p class ="paragraphText">Làm sạch da 2 lần/ngày,bôi kem dưỡng mỗi ngày, đắp mặt nạ dưỡng ẩm 2-3 lần/tuần , tẩy tế bào chết và ngừng sử dụng các sản phẩm chăm sóc da gây dị ứng. </p>   
-                    </div>
-
-                    <div class ="tuvantongquanItem"> 
-                        <p class ="titletvtq">Quầng thâm mắt: </p>
-                        <p class ="paragraphText">Làm sạch da 2 lần/ngày,bôi kem dưỡng mỗi ngày, đắp mặt nạ dưỡng ẩm 2-3 lần/tuần , tẩy tế bào chết và ngừng sử dụng các sản phẩm chăm sóc da gây dị ứng. </p>   
-                    </div>
-
-                    <div class ="tuvantongquanItem"> 
-                        <p class ="titletvtq">Lỗ chân lông: </p>
-                        <p class ="paragraphText">Làm sạch da 2 lần/ngày,bôi kem dưỡng mỗi ngày, đắp mặt nạ dưỡng ẩm 2-3 lần/tuần , tẩy tế bào chết và ngừng sử dụng các sản phẩm chăm sóc da gây dị ứng. </p>   
-                    </div>
-                    <div class ="tuvantongquanItem"> 
-                        <p class ="titletvtq">Đốm thâm nám: </p>
-                        <p class ="paragraphText">Làm sạch da 2 lần/ngày,bôi kem dưỡng mỗi ngày, đắp mặt nạ dưỡng ẩm 2-3 lần/tuần , tẩy tế bào chết và ngừng sử dụng các sản phẩm chăm sóc da gây dị ứng. </p>   
-                    </div> --}}
 
                 </div>
                 @endif
                 
+                <div class="title-overview blurdiv1" id ="tvtq_area"  >
+                    <div class="hcn">
+
+                    </div>
+                    <div class="title-larger">
+                        Sản phẩm gợi ý
+                    </div>
+
+                </div>
+
+         
+                <div id = "list-product">
+
+
+
+                </div>
 
             </div>
             <div class="recomend-title-box" id ="hideProductList"> 
 
 <div class="centerText"> 
-<p>GỢI Ý TỪ CHUYÊN GIA</p>
+<p>Gặp gỡ trực tiếp chuyên gia về da</p>
 <img src="/images/start-direct.png"> 
 
 </div>
+
 <div  class="title-strong"> 
 <p> CÁC SẢN PHẨM CHUYÊN GIA ĐỀ XUẤT RIÊNG CHO BẠN </p>
 </div>
-</div>
-
-<div id = "list-product">
-
-
-
 </div>
 
             @if (1==1)
@@ -855,8 +848,8 @@
                 <div class="box-class-center" style="height:77px">
                     <div class=" nav-button  spaceAjustVer btnrecomend">
 
-                        <a href="javascript:void(0)" onclick="openRecomendProduct()" style="width: 234px !important">
-                            <img src="/images/arrow.png"> GỢI Ý CHĂM SÓC TỪ CHUYÊN GIA </a>
+                        <a href="javascript:void(0)" onclick ="openchuyengia()" style="width: 234px !important">
+                            <img src="/images/arrow.png"> Gặp gỡ trực tiếp chuyên gia về da</a>
 
                     </div>
                 </div>
@@ -867,11 +860,13 @@
 
             @endif
 
+           
+
         </div>
 
             
        
-
+     
 
 
         <script>
@@ -1797,7 +1792,7 @@
             {
                  
                 $("#hideProductList").hide();
-                $("#list-product").hide();
+              
                 $("#buttonRecomand").hide();
             }
 
@@ -2087,6 +2082,36 @@ function openRegister ( connectionType ="minisize")
 
 </script>
 
+<script> 
+
+var companyIdGlobal = {!! json_encode($companyId) !!};
+$(document).ready(function(){ 
+
+
+           var resultCheck = sessionStorage.getItem("_t");
+            if(resultCheck ==null)
+            {
+                
+                window.location.href ="/";
+
+            }
+            else 
+            {
+                 objectReponse = JSON.parse(resultCheck);
+            }
+            
+        
+            
+        
+
+            drawProduction(objectReponse.data.facedata.hintResult);
+
+            
+
+}) 
+
+</script>
+
 
 
 <div id ="socialBLock" class="actionToolbar_mobile toolbar_style_2  " style="
@@ -2240,5 +2265,10 @@ background-color: transparent;
  color: #ffffff;
 }
 </style>
+
+
+
+
+
 
 

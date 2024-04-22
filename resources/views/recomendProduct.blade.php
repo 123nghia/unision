@@ -185,7 +185,7 @@ var companyIdGlobal = {!! json_encode($companyId) !!};
 $(document).ready(function(){ 
 
 
-  var resultCheck = sessionStorage.getItem("_t");
+           var resultCheck = sessionStorage.getItem("_t");
             if(resultCheck ==null)
             {
                 

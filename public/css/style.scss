@@ -36,7 +36,7 @@
 }
 .ai-skin__button > button,
 .ai-skin__button > a {
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     background-color: #0b5963;
     color: #fff;
     padding: 10px 14px;
@@ -44,7 +44,7 @@
     font-size: 12px;
     line-height: 17px;
     font-weight: bold;
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -86,7 +86,7 @@ color: #FFFFFF;
     margin: auto 1.25rem;
 }
 .ai-skin__navigator-inner > span {
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.875rem;
@@ -133,12 +133,12 @@ color: #FFFFFF;
     grid-template-columns: -webkit-min-content auto;
     grid-template-columns: min-content auto;
     grid-gap: 5px;
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 17px;
-    color: #1c213f;
+    color: #0b5963;
 }
 .ai-skin__result-checkbox-input {
     display: grid;
@@ -237,7 +237,7 @@ color: #FFFFFF;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.375rem;
@@ -386,7 +386,7 @@ color: #FFFFFF;
 }
 .ai-skin__result-analyze-content {
     width: 100%;
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.3125rem;
@@ -406,7 +406,7 @@ color: #FFFFFF;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.1875rem;
@@ -449,14 +449,14 @@ color: #FFFFFF;
 }
 .ai-skin__tips__content-header {
     display: inline-block;
-    font-family: "SFU Futura", sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    color: #1c213f;
+    color: #0b5963;
 }
 .ai-skin__tips__content-body {
     padding-left: 15px;
@@ -464,7 +464,7 @@ color: #FFFFFF;
 }
 .ai-skin__tips__content-body > li {
     padding: 5px;
-    font-family: SFU Futura;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -722,7 +722,7 @@ a {
 }
 .txt {
     display: inline-block;
-    border-bottom: 1px solid #1c213f;
+    border-bottom: 1px solid #0b5963;
 }
 .icn > img {
     position: absolute;

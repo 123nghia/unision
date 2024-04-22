@@ -216,8 +216,8 @@ var html= ' <div class="result-item"> \
 <span class="title-bold"> \
    ' + ketLuanTungPhanItem.title.vi+ '\
 </span>\
-\ <a onclick ="openDetail(this)" style=" font-size: 1.2rem !important; /* margin-top: 28px !important; */ color: slateblue; ">Xem chi tiết</a> \
-<ul class ="hideItem">';
+ \
+<ul >';
 
 var dataList = ketLuanTungPhanItem.data;
 dataList.forEach(function (item, index) {
@@ -993,7 +993,7 @@ function drawConcludev2 ( groupk, valuek, item)
    
    
    var htmlTemp = ' <div class="ConcludeItem"><p class ="paragraph-text-pa"> <span class ="bold-text-pa">'+tilte+': </span>\
-<span class ="leveldegree"> '+text+' (Mức '+value23 +'/10) </span>\
+<span class ="leveldegree"> '+''+' Mức '+value23 +'/10 </span>\
    </p > \
    <div class="progress-bar-container">\
        <div class="progress-bar-indicator" style ="width: '+percentage+'%;" >\
@@ -1006,7 +1006,6 @@ function drawConcludev2 ( groupk, valuek, item)
    </div>\
    <div id="textbox">\
    <p class="alignleft">0</p>\
-   <p class="aligncenter">Điểm trung bình</p>\
    <p class="alignright">10</p>\
    </div>\
                 </div>';
@@ -1069,7 +1068,6 @@ var itemIndex = item[i];
    </div>\
    <div id="textbox">\
    <p class="alignleft">0</p>\
-   <p class="aligncenter">Điểm trung bình</p>\
    <p class="alignright">3</p>\
    </div>\
    <div style="clear: both;"></div>\
@@ -1109,6 +1107,18 @@ listDataProducts.forEach(element => {
  
 var pathImage = 'https://soida-api.placentor.com.vn/public/image_plugin/' +'' +element.image_link +'';
 
+var itemprice =  element.price;
+var textDisplay1 = "";
+
+if(itemprice== "" )
+{
+  textDisplay1 = " 0đ";
+}
+else 
+{
+  textDisplay1 = itemprice +" đ";
+}
+
 var xhr = new XMLHttpRequest();
 xhr.open('HEAD', pathImage, false);
 xhr.send();
@@ -1121,6 +1131,7 @@ htmlItem+=  '<div class="product-item1">\
  </div>\
  <div class="content-product">\
      <div class="brand"><a href="'+element.linkdetail+'">'+element.name+'</a> </div>\
+     <div class="brand" ><a style="color:#ef7d47 "(> '+textDisplay1+' )</a> </div>\
  </div>\
 \
 </div>'; 
@@ -1134,6 +1145,7 @@ htmlItem+=  '<div class="product-item1">\
  </div>\
  <div class="content-product">\
      <div class="brand"><a href="'+element.linkdetail+'">'+element.name+'</a> </div>\
+     <div class="brand" ><a style=" color:#ef7d47 ">( '+textDisplay1+')</a> </div>\
  </div>\
 \
 </div>'; 

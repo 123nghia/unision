@@ -5,7 +5,7 @@
 @media only screen and (max-width: 600px) {
     .content-plugin {
         .bold-text {
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 12px !important;
@@ -16,7 +16,7 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
         .normal-text {
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: lighter;
 
             font-weight: 300 !important;
@@ -95,7 +95,7 @@
             }
             .row_bottom {
                 span {
-                    font-family: SFU Futura;
+                    font-family: Roboto, sans-serif;
                     font-style: normal !important;
                     font-weight: normal !important;
                     font-size: 12px !important;
@@ -125,7 +125,7 @@
             height: 28px !important;
         }
         button {
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal !important;
             font-weight: bold !important;
             font-size: 12px !important;
@@ -141,7 +141,7 @@
         padding-bottom: 50px !important;
         .description-contet {
             .title-description-content {
-                font-family: SFU Futura;
+                font-family: Roboto, sans-serif;
                 font-style: normal;
                 font-weight: bold !important;
                 font-size: 12px !important;
@@ -151,7 +151,7 @@
                 color: #1a214f;
             }
             .content-paragraph {
-                font-family: SFU Futura;
+                font-family: Roboto, sans-serif;
                 font-style: normal !important;
                 font-weight: normal !important;
                 font-size: 12px !important;
@@ -171,7 +171,7 @@
             width: 194px !important;
             height: 35px !important;
             background-color: #0b5963 !important;
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
@@ -195,7 +195,7 @@
                 color: #000000 !important;
             }
             .descriptionContent {
-                font-family: SFU Futura;
+                font-family: Roboto, sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 12px !important;
@@ -212,7 +212,7 @@
         margin: auto;
 
         .text-center-box {
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 13px;
@@ -228,23 +228,23 @@
 
         .text-title-paragraph {
             margin-top: 19px !important;
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
             line-height: 17px;
             /* identical to box height */
 
-            color: #1c213f;
+            color: #0b5963;
         }
         .description {
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
             line-height: 17px;
 
-            color: #1c213f;
+            color: #0b5963;
         }
     }
 
@@ -271,28 +271,28 @@
                 padding-right: 10px;
                 text-align: justify;
                 span {
-                    font-family: SFU Futura;
+                    font-family: Roboto, sans-serif;
                     font-style: normal;
                     font-weight: 300 !important;
                     font-size: 12px !important;
                     line-height: 17px !important;
 
-                    color: #1c213f;
+                    color: #0b5963;
                 }
 
                 .title-bold {
-                    font-family: SFU Futura;
+                    font-family: Roboto, sans-serif;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 14px;
                     line-height: 20px;
                     /* identical to box height */
 
-                    color: #1c213f;
+                    color: #0b5963;
                 }
                 a {
-                    color: #1c213f;
-                    font-family: SFU Futura;
+                    color: #0b5963;
+                    font-family: Roboto, sans-serif;
                     font-style: normal;
                     font-weight: 300;
                     font-size: 12px;
@@ -315,14 +315,14 @@
         p{
             width: 312px !important;
 
-            font-family: SFU Futura;
+            font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
             line-height: 17px;
             text-align: center !important;
 
-            color: #1C213F;
+            color: #0b5963;
         }
     }
     

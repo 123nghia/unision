@@ -433,7 +433,7 @@
 
   :root {
     --a-blue-1: #027fca;
-    --font-main: SFU Futura;
+    --font-main: Roboto, sans-serif;;
     --black: black;
     --font-black: #343a40;
     --font-black-2: #343a40;

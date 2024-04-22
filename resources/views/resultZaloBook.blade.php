@@ -395,11 +395,11 @@
                   
                 }
                 .ConcludeItem  {
-                font-family: SFU Futura;
+                font-family: Roboto, sans-serif;
                 font-style: normal;
                 font-size: 14px;
                 line-height: 20px;
-                color: #1c213f;
+                color: #0b5963;
                 }
 
                 
@@ -499,19 +499,19 @@
                     .titletvtq {
                     margin-right: 5px;
                     font-weight: bold;
-                    font-family: SFU Futura;
+                    font-family: Roboto, sans-serif;
                     font-style: normal;
                     font-size: 14px;
                     line-height: 20px;
-                    color: #1c213f;
+                    color: #0b5963;
                     }
                     .paragraphText{
 
-                        font-family: SFU Futura;
+                        font-family: Roboto, sans-serif;
                         font-style: normal;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #1c213f; 
+                        color: #0b5963; 
                         text-align: justify;
                        
                     }

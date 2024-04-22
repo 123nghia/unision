@@ -1,0 +1,39 @@
+.text-center-paragrapb {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#formReward {
+  margin-top: 32px;
+  padding: 10px;
+}
+#formReward button {
+  text-align: center;
+  width: 115px;
+  height: 35px;
+  background-color: #0b5963;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+#formReward .submit-form {
+  width: 100%;
+  text-align: center;
+}
+#formReward input {
+  background-color: #F1F4F1;
+}
+#formReward label {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #000000;
+}

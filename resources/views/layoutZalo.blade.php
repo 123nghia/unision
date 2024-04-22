@@ -70,6 +70,9 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/animation.css">
     <link rel="stylesheet" href="/css/table.css">
+    <link href='//hstatic.net/0/0/global/design/plugins/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'  media='all'  />
+
+<link href='//theme.hstatic.net/200000380563/1001052428/14/styles.css?v=578' rel='stylesheet' type='text/css'  media='all'  />
     <style> 
     
         :root{
@@ -109,6 +112,250 @@
         
            
         }
+
+        #footer {
+position: relative;
+	color:#67BAB0 !important;
+	background-color:#0B5963;
+	font-size: 13px;
+
+}
+
+
+.footer-copyright{
+	background-color:#063137;
+	padding: 15px 0px;
+	font-size: 12px;
+}
+.footer-copyright p {
+	margin: 0;
+}
+#footer .title{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: left;
+	margin-top: 14px;
+	overflow: hidden;
+	line-height: 30px;
+}
+#footer .widget-wrapper ul{
+	margin-bottom: 0;
+}
+#footer  a{
+	color: #67BAB0;
+}
+#footer  a:hover{
+	color: #ffffff;
+	text-decoration:none;
+}
+.footer-bottom {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+#footer .about_us .message {
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+#footer strong, #footer b {
+	color:#ffffff;
+}
+
+#footer .widget-wrapper ul {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+#footer .about_us ul li {
+	padding: 0;
+	line-height: 30px;
+}
+
+#footer .about_us i {
+	margin-right: 7px;
+}
+#footer .list-styled > li {
+	padding: 0;
+	line-height: 15px;
+	overflow: hidden;
+}
+#footer .list-styled > li > a {
+	padding: 5px 0;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+
+#footer {
+	position: relative;
+	color:#67BAB0;
+	background-color:#0B5963;
+	font-size: 13px;
+}
+.footer-copyright{
+	background-color:#063137;
+	padding: 15px 0px;
+	font-size: 12px;
+}
+.footer-copyright p {
+	margin: 0;
+}
+#footer .title{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: left;
+	margin-top: 14px;
+	overflow: hidden;
+	line-height: 30px;
+}
+#footer .widget-wrapper ul{
+	margin-bottom: 0;
+}
+#footer  a{
+	color: #67BAB0;
+}
+#footer  a:hover{
+	color: #ffffff;
+	text-decoration:none;
+}
+.footer-bottom {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+#footer .about_us .message {
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+#footer strong, #footer b {
+	color:#ffffff;
+}
+
+#footer .widget-wrapper ul {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+#footer .about_us ul li {
+	padding: 0;
+	line-height: 30px;
+}
+
+#footer .about_us i {
+	margin-right: 7px;
+}
+#footer .list-styled > li {
+	padding: 0;
+	line-height: 15px;
+	overflow: hidden;
+}
+#footer .list-styled > li > a {
+	padding: 5px 0;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+
+
+.group-input input[type="email"] {
+    -webkit-appearance: none;
+    color: #000000;
+    outline: none !important;
+    height: 32px;
+    padding: 0 12px !important;
+    font-weight: normal;
+    vertical-align: top;
+    background-color: #ffffff;
+    background-image: none;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 1px solid #e5e5e5;
+    color: inherit;
+    padding: 10px 10px 10px 5px !important;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background: transparent;
+    margin-bottom: 0;
+    height: 36px;
+}
+
+.group-input input, .group-input .input {
+    color: inherit;
+    padding: 10px 10px 10px 5px !important;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background: transparent;
+    margin-bottom: 0;
+    height: 36px;
+}
+
+.group-input button {
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    outline: none;
+    color: #67BAB0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
+}
+
+#widget-social {
+    display: inline-block;
+    margin-top: 24px;
+}
+#footer .widget-wrapper ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.social-icons ul {
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 0;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.list-inline {
+    display: inline-flex;
+}
     </style>
 
     <style>
@@ -365,183 +612,202 @@
 
 @if($slug == "ngocdung")
 
-<footer class="bg-smoke">
-    <div class="content-page">
-        <div class="content-plugin">
-            <div class="row" style="padding: 20px 0;margin:0">                     
-                <div class="footer__col1--padding">   
-                    <div class="desktop-inline">
-                    <div class="footer__col1--column">
-                        <img class="footer__logo-shynh" src="/footerLogo.png" alt="logo">
-                        <div class="footer__global-title text-center font--main">
-                            <a>
-                                <span class="font--main">
-                                    
-                                </span>
-                            </a>
-                        </div>  
-                        
-                    </div>   
-                    </div>   
-                </div>   
-                             
-                <div class="footer__col2--padding">             
-                        <div div="" class="footer__space--mobi">
-                        </div>    
-                            <div class="footer__global-title font--main">
-                                <span> Công ty TNHH Thẩm Mỹ Ngọc Dung  </span>
-                            </div>
-                         
-                            <div class="footer__global font--main">
-                            Số ĐKKD 0307935853 do Sở KHĐT Tp. HCM cấp ngày 20/07/2009
-                            </div> 
-                           
-                            <div class="footer__global font--main"> 
-                                Email: <a class="font--main" href="mailto:thammyngocdung2023@gmail.com">thammyngocdung2023@gmail.com</a>
-                            </div>    
-                </div>
-            </div>
-        </div>
-    </div>
-
-  
-</footer> 
 
 @elseif($slug == "zema")
 
-<footer class="bg-smoke">
-    <div class="content-page">
-        <div class="content-plugin">
-            <div class="row" style="padding: 20px 0;margin:0">                     
-                <div class="footer__col1--padding">   
-                    <div class="desktop-inline">
-                    <div class="footer__col1--column">
-                        <img class="footer__logo-shynh" src="/footerLogo.png" alt="logo">
-                        <div class="footer__global-title text-center font--main">
-                            <a>
-                                <span class="font--main">
-                                    
-                                </span>
-                            </a>
-                        </div>  
-                        
-                    </div>   
-                    </div>   
-                </div>   
-                             
-                <div class="footer__col2--padding">             
-                        <div div="" class="footer__space--mobi">
-                        </div>    
-                            <div class="footer__global-title font--main">
-                                <span> CÔNG TY TNHH ZEMA VIỆT NAM  </span>
-                            </div>
-                            <div class="footer__global font--main">
-                            Mã số thuế 0315426909
-                            </div> 
-                             <div class="footer__global font--main">
-                             Địa chỉ: Số 146 đường 6A, Khu nhà ở Rạch Bà Tánh, Ấp 5, Xã Bình Hưng, Huyện Bình Chánh, Thành phố Hồ Chí Minh, Việt Nam
-                            </div> 
-                            <div class="footer__global font--main"> 
-                                Email: <a class="font--main" href="info@zema.com.vn">info@zema.com.vn</a>
-                            </div>   
-                </div>
-            </div>
-        </div>
-    </div>
 
-  
-</footer> 
 
 @elseif($slug == "zasaly")
-        <footer class="bg-smoke">
-            <div class="content-page">
-                <div class="content-plugin">
-                    <div class="row" style="padding: 20px 0;margin:0">                     
-                        <div class="footer__col1--padding">   
-                            <div class="desktop-inline">
-                            <div class="footer__col1--column">
-                                <img class="footer__logo-shynh" src="/footerLogo.png" alt="logo">
-                                <div class="footer__global-title text-center font--main">
-                                    <a>
-                                        <span class="font--main">
-                                            
-                                        </span>
-                                    </a>
-                                </div>  
-                                
-                            </div>   
-                            </div>   
-                        </div>   
-                                    
-                        <div class="footer__col2--padding">             
-                                <div div="" class="footer__space--mobi">
-                                </div>    
-                                    <div class="footer__global-title font--main">
-                                        <span> Công ty TNHH Zasaly  </span>
-                                    </div>
-                                    <div class="footer__global font--main">
-                                    Số đăng ký kinh doanh: 0316541679
-                                    </div> 
-                                   
-                                    <div class="footer__global font--main"> 
-                                        Email: <a class="font--main" href="info@zasaly.com">info@zasaly.com</a>
-                                    </div>   
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        
-        </footer> 
+       
 
 @else 
-<footer class="bg-smoke">
-    <div class="content-page">
-        <div class="content-plugin">
-            <div class="row" style="padding: 20px 0;margin:0">                     
-                <div class="footer__col1--padding">   
-                    <div class="desktop-inline">
-                    <div class="footer__col1--column">
-                        <img class="footer__logo-shynh" src="/footerLogo.png" alt="logo">
-                        <div class="footer__global-title text-center font--main">
-                            <a>
-                                <span class="font--main">
-                                    
-                                </span>
-                            </a>
-                        </div>  
-                        
-                    </div>   
-                    </div>   
-                </div>   
+<footer id="footer">
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6 col-md-3 col-xs-12 clear-sm">
+					<div class="widget-wrapper animated">
+						
+						<h3 class="title title_left">Giới thiệu</h3>
+						
+						<div class="inner about_us">
+							
+							<p class="message">Hơn 60 năm là chuyên gia trong ngành Dược mỹ phẩm,
+Placentor Vegetal là thương hiệu ứng dụng tế bào học đầu tiên trên thế giới.</p>
+							
+							<ul class="list-unstyled">
+								
+								<li>
+									<i class="fa fa-home"></i>83 Trường Chinh, Phường 12, Quận Tân Bình, TP. Hồ Chí Minh
+								</li>
+								
+								
+								<li>
+									<i class="fa fa-envelope-o"></i> <a href="mailto:tuvan.unison@gmail.com">tuvan.unison@gmail.com</a>
+								</li>
+								
+								
+								<li>
+									<i class="fa fa-phone"></i>1900636498
+								</li>
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-sm-6 col-md-2 col-xs-12 clear-sm">
+					<div class="widget-wrapper animated">
+						
+						<h3 class="title title_left">Chính sách</h3>
+						
+						<div class="inner">
+							
+							<ul class="list-unstyled list-styled">
+								
+								<li>
+									<a href="https://placentor.com.vn/pages/ve-placentor-vegetal">Về Placentor Vegetal</a>
+								</li>
+								
+								<li>
+									<a href="https://placentor.com.vn/pages/chinh-sach-giao-hang-va-thanh-toan">Chính sách giao hàng và thanh toán</a>
+								</li>
+								
+								<li>
+									<a href="https://placentor.com.vn/pages/chinh-sach-bao-mat">Chính sách bảo mật</a>
+								</li>
+								
+								<li>
+									<a href="https://placentor.com.vn/pages/chinh-sach-doi-tra-va-hoan-tien">Chính sách đổi trả và hoàn tiền</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-sm-6 col-md-3 col-xs-12 clear-sm">
+					<div class="widget-wrapper animated">
+						
+						
+						<h3 class="title title_left">Đăng kí nhận tin</h3>
+						
+						<div class="inner">
 
-                <div class="footer__col2--padding">             
-                    <div div="" class="footer__space--mobi">
-                    </div>    
-                          <div class="footer__global-title font--main">
-                                <span>Placentor Vegetal</span>
-                            </div>
-                         
-                            <div class="footer__global font--main">
-                            83 Trường Chinh, Phường 12, Quận Tân Bình, TP. Hồ Chí Minh
-                            </div> 
-                            <div class="footer__global font--main">
-                                Hotline: <a class="font--main" href="tel:1900636498">1900636498</a> 
-                                
-                            </div> 
+							
+							<form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+<input name="form_type" type="hidden" value="customer">
+<input name="utf8" type="hidden" value="✓">
+
+							<div class="group-input"> 
+								<input type="hidden" id="contact_tags" name="contact[tags]" value="khách hàng tiềm năng, bản tin">     
+								<input type="email" required="required" name="contact[email]" id="contact_email">
+								<span class="bar"></span>
+								<label>Nhập email của bạn</label>
+								<button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+							</div>
 
 
-                       
-                            <div class="footer__global font--main"> 
-                                Email: <a class="font--main" href="mailto:hi@tikitech.vn">tuvan.unison@gmail.com</a>
-                            </div>    
-                </div>
-            </div>
-        </div>
-    </div>
+							
+							   
+							 
+							
+<input id="ed75dc1c8a1943c3aaacd0e52c29e186" name="g-recaptcha-response" type="hidden" value="03AFcWeA6xNmIuVXAmkR6DjmT3NR9ndjMD9_fZl7CURtZXxsPZh_o6wCP8IsO4Yh96b7ol_s3rZiAffxbuHKzbevOi_4Yea1UcNIxQIIyHgEbAQTgYvsY3_fyCvwbEsMWYyKUw3hbO6o37NiZ3t59l-uF4oPIT7koYT5MS7vygIotDD9RKotsfPouSQMMOy_ITUUVyGrGw0NUayRZgxQl8ZG43H_Uk80qjRyC1t5LTPOWD1and9rssIXBX1tQcbcNJoeSBtuDMFd_MDc7KgTz4FBRtSAraXvvLRE-n9hrdVtgvkx7QhZhZNWX9eKPpiF9lJZS7eVtH2garDH2Nd5kggPyQaR3d17D909ipYA-3yXHKUWHQoKYXk23FBilTPIEkd3YSagTTp_QoBQ39Xffg6os9gWFLUvQflBnb2Si3nQRZS3eMRsu8nVriAuKgKew7hPOsxKMGYVpqCl4kVdGQ5hOJxwQrl2qKFlJCGmCwNudMOPHTGyJHw3b2Z2WCi4DjUr87MpBCpGdZd73nFyyI6nrb78fS-A1WJkbolc8Zh7yJvSEq2wd6pLvEGRcKG6dAdZtNaMgLIYdZiYoP6xO9WFXjYVqqGtoakJWDtsEakhcz8uv6ZUmj6TVvsyDjKTyyUBh36fWTVRUxe36HkF-IHXTLL6nJfrZUdsWLaDLtkVP-j4giEFHMG3NyCu3txHJuao8xuj1R7CxF"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('ed75dc1c8a1943c3aaacd0e52c29e186').value = token;});});</script></form>               
+							 
+							
+							<div class="caption">Hãy nhập email của bạn vào đây để nhận tin!</div>
+							
+						</div>
+						
+						
+						
 
-  
-</footer> 
+<div id="widget-social" class="social-icons">
+  <ul class="list-inline">
+    
+    <li>
+      <a target="_blank" href="https://www.facebook.com/placentorvegetalvietnam" class="social-wrapper facebook">
+        <span class="social-icon">
+          <i class="fa fa-facebook"></i>
+        </span>
+      </a>
+    </li>
+    
+    
+     
+   
+    
+    <li>
+      <a target="_blank" href="https://www.youtube.com/channel/UC_VMXYW7DJJivQAjFEnudLQ/about" class="social-wrapper youtube">
+        <span class="social-icon">
+          <i class="fa fa-youtube"></i>
+        </span>
+      </a>
+    </li>
+    
+    
+    <li>
+      <a target="_blank" href="https://www.instagram.com/placentorvegetal_vietnam/" class="social-wrapper instagram">
+        <span class="social-icon">
+          <i class="fa fa-instagram"></i>
+        </span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+						
+					</div>
+				</div>
+				
+				
+				<div class="col-sm-6 col-md-4 col-xs-12 clear-sm">
+					<div class="widget-wrapper animated">
+						
+						<h3 class="title title_left">Kết nối với chúng tôi</h3>
+						
+						<div class="inner">
+							<!-- Facebook widget -->
+
+<div class="footer-static-content"> 
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/placentorvegetalvietnam" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=263266547210244&amp;container_width=360&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fplacentorvegetalvietnam&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f5c812c042be0ab0d" width="1000px" height="300px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v15.0/plugins/page.php?adapt_container_width=true&amp;app_id=263266547210244&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2a8eb719088956de%26domain%3Dplacentor.com.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fplacentor.com.vn%252Ff239d2c5292e0b3f8%26relation%3Dparent.parent&amp;container_width=360&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fplacentorvegetalvietnam&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div>
+</div>
+<div style="clear:both;">
+	
+</div>
+
+<!-- #Facebook widget -->
+<script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=263266547210244&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+	
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-copyright">
+		<div class="container copyright">						
+			<p>Copyright © 2024 Placentor Vegetal - Sức mạnh tái tạo từ tế bào gốc noãn thực vật. <a target="_blank" href="https://www.haravan.com/?utm_campaign=poweredby&amp;utm_medium=haravan&amp;utm_source=onlinestore">Powered by Tikitech</a>.</p>
+
+		</div>
+	</div>
+</footer>
 
 @endif
 <div   class= "bg-smoke"   style ="height:50px">

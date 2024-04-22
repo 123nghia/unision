@@ -354,12 +354,12 @@
                 <div class="uploadButton cameraNow" >
 
                     <div class="nav-avatar nav-avatar__camera" onclick="haldleOpenCamera()" style="
-                    background-color: red;
+                    background-color: #0b5963;
                 ">
                         
                         <svg class="nav-menu-svg nav-svg-camera" xmlns="http://www.w3.org/2000/svg" 
                         style="
-    background-color: red;
+    background-color: #0b5963;
 "
                         x="0px" y="0px" width="52px" height="52px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
                             <g>
