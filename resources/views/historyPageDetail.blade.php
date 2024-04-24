@@ -423,33 +423,7 @@
                 </div>
 
               
-                <div class ="toneColorSkin">
-                    <p class="titleColor centerScreen"> 
-    
-                        <span  class ="title2" > Màu trang điểm, quần áo.. </span>
-                        <span  class ="title2" > Phù hợp với tone màu da của bạn</span>
-                    </p>
-                    <div class ="center-image" id ="backgroudColor">
-                         {{-- <img  id ="renderface" src ="/face.jpg"> --}}
-                         <canvas id="canvasFace" width="160" height="160"></canvas>
-                    </div>
-                    <div class ="descrptionSkinColor" id ="descrptionSkinColorid">
-                        <p>Nhận diện tone màu da </p>  
-                        <p id ="SkinColorHueDeltaText">Màu sắc của da: <span>Ửng đỏ </span></p>  
-                        <p id ="SkinColorLevelText" >Độ sáng màu: <span>Tự nhiện </span></p>   
-                        <p id ="SkinLevel">Mức độ bản màu quốc tế: <span>Màu quốc tế 33 </span></p>   
-                    
-                    </div>
-                    <p class="titleColor"> 
-                        Màu phù hợp với tone màu da của bạn
-                    </p>
-                    <div class ="navbarColor" id ="containerColor">
-                          
-                        </div>
-                         
-                   
-                  
-                </div> 
+      
                     
                 <div class="poupupContainer">
                     <div class="modalpopup">
@@ -1429,7 +1403,7 @@
    
         avgScorev2(objectReponse);
 
-        readInfoToneSkin(objectReponse.data.facedata.dataReponse);
+
             drawImageTone(objectReponse.data.facedata.image_info.url,objectReponse.data.rectangle );
             setTimeout(() => {
                 $('.navbarColor').slick({

@@ -1,0 +1,53 @@
+.displayblock{
+    span {
+        display: block !important;
+    }
+}
+.removeMargin{
+    margin: unset !important;
+}
+.searchArea{
+    width: 100%;
+    justify-content: flex-end;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    button {
+        width: 100px;
+        margin-right: 10px;
+    }
+}
+
+.formatIcon{
+    width: 40px;
+}
+
+.descriptionLogin {
+   color: #0b5963;
+  
+    text-align:left;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0b5963;
+    border-color: #0b5963;
+}
+.bg-primary {
+    background-color: #e9e9e9 !important;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b5963;
+    border-color: #0b5963;
+    opacity: 0.8;
+}
+.titleLogin {
+    color: #0b5963;
+}
+
+.btnRegister {
+    color: #0b5963 !important;
+    font-weight: bold;
+}

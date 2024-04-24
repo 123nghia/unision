@@ -801,12 +801,12 @@ Placentor Vegetal là thương hiệu ứng dụng tế bào học đầu tiên 
 		</div>
 	</div>
 
-	<div class="footer-copyright">
+	<!-- <div class="footer-copyright">
 		<div class="container copyright">						
 			<p>Copyright © 2024 Placentor Vegetal - Sức mạnh tái tạo từ tế bào gốc noãn thực vật. <a target="_blank" href="https://www.haravan.com/?utm_campaign=poweredby&amp;utm_medium=haravan&amp;utm_source=onlinestore">Powered by Tikitech</a>.</p>
 
 		</div>
-	</div>
+	</div> -->
 </footer>
 
 @endif
