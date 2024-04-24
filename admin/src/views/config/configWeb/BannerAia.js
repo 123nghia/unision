@@ -27,7 +27,7 @@ export default class BannerAia extends Component {
           </Button>
         </div>
         <div class="mt-3">
-          <h1>Banner Desktop</h1>
+          <h1>Banner Desktop( 1050 *300)</h1>
           <TextFieldGroup
             field="image"
             label="Hình ảnh"
@@ -64,7 +64,7 @@ export default class BannerAia extends Component {
         </div>
         <hr />
         <div class="mt-3">
-          <h1>Banner Mobile</h1>
+          <h1>Banner Mobile (600 *250)</h1>
           <TextFieldGroup
             field="image"
             label="Hình ảnh"
