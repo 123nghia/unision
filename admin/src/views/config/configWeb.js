@@ -315,6 +315,11 @@ class ConfigWeb extends Component {
                   imageBannerMobile: this.state.banner.imageBannerMobile,
                   imageBannerMobile_link: this.state.banner.imageBannerMobile,
                   imageBannerMobile_show: this.state.banner.imageBannerMobile,
+
+
+                  imageHomepage: this.state.banner.imageHomepage,
+                  imageHomepage_link: this.state.banner.imageHomepage,
+                  imageHomepage_show: this.state.banner.imageHomepage,
                 });
               }
               if(bannerCampaign){
@@ -851,10 +856,21 @@ class ConfigWeb extends Component {
         coppyData.value.banner.imageBannerMobile = `${Constants.BASE_URL}/image_brand/${newImage2}`;
       }
 
+
+      let newImage3 = await this.postImage(this.state.imageHomepage_link);
+      if (newImage3) {
+        coppyData.value.banner.imageHomepage = `${Constants.BASE_URL}/image_brand/${newImage3}`;
+      }
+
       coppyData.value.banner.hrefImageBannerDesktop =
         this.state.hrefImageBannerDesktop;
       coppyData.value.banner.hrefImageBannerMobile =
         this.state.hrefImageBannerMobile;
+
+      
+
+
+
 
       this.setState({
         dataConfigWeb: coppyData,
@@ -1442,7 +1458,9 @@ class ConfigWeb extends Component {
                   imageBannerDesktop={this.state.imageBannerDesktop}
                   hrefImageBannerDesktop={this.state.hrefImageBannerDesktop}
                   imageBannerMobile={this.state.imageBannerMobile}
-                  hrefImageBannerMobile={this.state.hrefImageBannerMobile}
+                  hrefImageBannerMobile={this.state.hrefImageBannerMobile} 
+
+                  imageHomepage={this.state.imageHomepage}
                 />
               </div>
               <div id="tabcontent10" className="tabcontent ">

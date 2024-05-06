@@ -73,7 +73,7 @@ const SubTypeHair = React.lazy(() => import('./views/base/tables/MakeUp/SubTypeH
 const SubTypeMakeUp = React.lazy(() => import('./views/base/tables/MakeUp/SubTypeMakeUp'));
 const Color = React.lazy(() => import('./views/base/tables/MakeUp/Color'));
 const TypeOne = React.lazy(() => import('./views/base/tables/MakeUp/TypeOne'));
-
+const ChuyenGia = React.lazy(() => import('./views/base/tables/chuyengia/TypeOne'));
 
 const configWeb = React.lazy(() => import("./views/config/configWeb"));
 
@@ -174,6 +174,9 @@ const routes = [
   { path: '/items/3', name: 'K4', component: TypeOne },
   { path: '/items/4', name: 'K5', component: TypeOne },
   { path: '/items/5', name: 'K6', component: TypeOne },
+
+
+  { path: '/danh-sach-chuyen-gia-tu-van/1', name: 'c1', component: ChuyenGia },
 
   { path: '/history/:phoneNumber', name: 'historyview', component: HistorySkin },
 

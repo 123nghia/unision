@@ -1,7 +1,7 @@
 @php
     $dataSeo = "Soida liền tay";
     $dataLikn =  session('TuVanData', null);
-
+    $bannerPage2 = null;
     $dataMinisize =  session('dataminisize', null);
     $zaloLink =  $dataLikn->zaloLink;
     $messengerLink = $dataLikn->messengerLink;
@@ -40,7 +40,23 @@
         $fileCamera = "/images/imageTakeCamera.png";
     }
 
+    if (isset($globalData) && isset($globalData->banner)) {
 
+
+$bannerPage = $globalData->banner;
+
+
+
+}
+else 
+{
+$bannerPage =   new \stdClass();
+$bannerPage->imageBannerDesktop= "https://api-soida.applamdep.com/image_brand/applamdep1320 (1).png";
+$bannerPage->imageBannerMobile  = "https://api-soida.applamdep.com/image_brand/applamdep1320 (1).png";
+$bannerPage->imageHomepage  = "/images/imageTakeCamera.png";
+
+}
+$fileCamera =  $bannerPage->imageHomepage;
   
     $dataSeo->description ="Soi da online .Ngay tại nhà, Kiểm tra, tuổi da & hơn 40 thông số về da khác. Một lần quét, nói với bạn mọi điều .#soidaonline";
 @endphp

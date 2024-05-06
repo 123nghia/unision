@@ -440,6 +440,7 @@ module.exports = function (app) {
     // sdk and notificaion
     const sdkRouter = require("../../../controllers/MakeUpControllerNew/SdkController");
     const itemRouter = require("../../../controllers/MakeUpControllerNew/ItemController");
+    const chuyengiaRouter = require("../../../controllers/chuyengia/ItemController");
     const messageRouter = require("../../../controllers/MakeUpControllerNew/MessageController");
 
 
@@ -452,5 +453,6 @@ module.exports = function (app) {
 
     app.use("/sdk", sdkRouter);
     app.use("/itemSdk", itemRouter);
+    app.use("/chuyengia", chuyengiaRouter);
     app.use("/message", messageRouter);
 };

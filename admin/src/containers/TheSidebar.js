@@ -120,6 +120,17 @@ const TheSidebar = () => {
         </div>
         <div style={{ backgroundColor: '#fffff' }}>
           <CCreateElement
+            items={navigations[0]}
+            components={{
+              CSidebarNavDivider,
+              CSidebarNavDropdown,
+              CSidebarNavItem,
+              CSidebarNavTitle
+            }}
+          />
+        </div>
+        <div style={{ backgroundColor: '#fffff' }}>
+          <CCreateElement
             items={navigations[1]}
             components={{
               CSidebarNavDivider,

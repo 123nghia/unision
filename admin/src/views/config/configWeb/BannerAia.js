@@ -101,6 +101,37 @@ export default class BannerAia extends Component {
             }}
           />
         </div>
+
+        <div class="mt-3">
+          <h1> Hình ảnh trang chủ (352 *352)</h1>
+          <TextFieldGroup
+            field="image"
+            label="Hình ảnh trang chủ"
+            type={"file"}
+            onChange={(e) => {
+              this.onChangeImage(
+                e,
+                "imageHomepage",
+                "imageHomepage_link",
+                "imageHomepage_show"
+              );
+            }}
+            onClick={(e) => {e.target.value = null;this.setStateByName("imageHomepage_show", "")}} 
+
+          
+          />
+          <div class="text-center">
+            <img
+              alt=""
+              style={{ width: "352px" }}
+              height="auto"
+              src={this.props.imageHomepage}
+            />
+          </div>
+       
+        </div>
+
+
       </>
     );
   }

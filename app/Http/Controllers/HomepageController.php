@@ -528,6 +528,33 @@ public function getDataInfo (Request $request)
          return false;
     }
 
+    private function getAllChuyenGia($slug)
+    {
+    
+        $url ="https://soida-api.placentor.com.vn/chuyengia/63949c2fe572ad08bd85d665/1";
+        $client = new Client();
+
+        $res = $client->request('get', $url, [
+            'json' => [
+                'slug'=> $slug
+              ]
+        ]);
+
+        if($res->getStatusCode() ==200)
+        {
+            $checkresult = $res->getBody()->getContents();
+            $checkresult = json_decode($checkresult);
+         
+            $result = $checkresult->dataRes;
+          
+             session(['chuyengiatuvan' =>$result]);
+         }
+         
+     
+         return false;
+    }
+
+
     private function getKLCT($companyId)
     {
           $dataRequest = [
@@ -640,6 +667,7 @@ public function getDataInfo (Request $request)
         
 
         $this->getTuVan($slug);
+        $this->getAllChuyenGia($slug);
         
         $this->setHistoryId(null);
         // $historyId =  session('historyId', null);
@@ -806,7 +834,7 @@ public function getDataInfo (Request $request)
 
     public function result (Request $request, $slug ="soida") 
     {
-       
+        
         $data  =  session('dataResult', null);
         $dataGame = Session('dataGame', null);
         $this->getTuVan($slug);

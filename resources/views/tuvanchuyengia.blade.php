@@ -1,23 +1,9 @@
 
 @php
-     $dataMinisize =  session('dataminisize', null);
-     $numberText =  3;
-
-     if(property_exists($dataMinisize, "countDown"))
-     {
-        $numberText =   $dataMinisize->countDown;
-     }
-
-     $numbershowUp=  3;
-
-     if(property_exists($dataMinisize, "showUp"))
-     {
-        $numbershowUp =   $dataMinisize->showUp;
-     }
-     
-   
-
-
+     $dataChuyengia =  session('chuyengiatuvan', []);
+     $linkimage = "https://soida-api.placentor.com.vn/public/image_plugin/";
+    
+  
 @endphp
 <style>
     /* bannerTuVan.jpg */
@@ -239,13 +225,7 @@ border-radius:30px;
         <div class="tuvanchuyengia2 form-information-user  " id="formTuVan" style="
         padding: 8px !important;
     ">
-            <div class="status-loader-22">
-                <div class="border-loading-spin">
-                    <svg class="loading-spin" viewBox="0 0 100 100">
-                        <circle class="loading-draw" cx="50" cy="50" r="45"></circle>
-                    </svg>
-                </div>
-            </div>
+            
 
             <div class="position-close2 position-close3" onclick="changeFormTuvan()">
                <span class ="number" id ="numberText" >X </span>
@@ -271,87 +251,22 @@ border-radius:30px;
                     text-align: center;
                     ">Trao đổi với chuyên gia của chung tôi qua Zalo</h2>
                     <div class ="dataList">
-                        <div class ="item-doctor"> 
-                            <div class ="imageContainer">
-                            <img src ="/bs1.jpg">
-                            </div>
-                            <p class ="desName">BS1 </p>
-                            <p class="desTitle"> 
-
-                                Nghiên cưu Da
-                            </p>
-
-                            <a href = "https://zalo.me/0914404450"  target="_blank">Trao đổi</a>
-                        </div>
+                       @foreach  ( $dataChuyengia as $itemchuyengia  )
 
                         <div class ="item-doctor"> 
-                            <div class ="imageContainer">
-                            <img src ="/bs1.jpg">
+                                <div class ="imageContainer">
+                                <img src =" {{ $linkimage.$itemchuyengia->image_link}}">
+                                </div>
+                                <p class ="desName">   {{$itemchuyengia->name}} </p>
+                                <p class="desTitle"> 
+
+                                    {{$itemchuyengia->description}}
+                                </p>
+
+                                <a href = "{{$itemchuyengia->linkdetail}}"  target="_blank">Trao đổi</a>
                             </div>
-                            <p class ="desName">BS2 </p>
-                            <p class="desTitle"> 
 
-                                Nghiên cưu Da
-                            </p> 
-
-                            <a href = "https://zalo.me/0914404450"  target="_blank">Trao đổi</a>
-                        </div>
-
-
-                        <div class ="item-doctor"> 
-                            <div class ="imageContainer">
-                            <img src ="/bs1.jpg">
-                            </div>
-                            <p class ="desName">BS3 </p>
-                            <p class="desTitle"> 
-
-                                Nghiên cưu Da
-                            </p>
-
-                            <a href = "https://zalo.me/0914404450"  target="_blank">Trao đổi</a>
-                        </div>
-
-                        <div class ="item-doctor"> 
-                            <div class ="imageContainer">
-                            <img src ="/bs1.jpg">
-                            </div>
-                            <p class ="desName">BS4 </p>
-                            <p class="desTitle"> 
-
-                                Nghiên cưu Da
-                            </p>
-
-                            <a href = "https://zalo.me/0914404450"  target="_blank">Trao đổi</a>
-                        </div>
-
-
-                        <div class ="item-doctor"> 
-                            <div class ="imageContainer">
-                            <img src ="/bs1.jpg">
-                            </div>
-                            <p class ="desName">BS5 </p>
-                            <p class="desTitle"> 
-
-                                Nghiên cưu Da
-                            </p>
-
-                            <a href = "https://zalo.me/0914404450"  target="_blank">Trao đổi</a>
-                        </div>
-                     
-                     
-
-                        <div class ="item-doctor"> 
-                            <div class ="imageContainer">
-                            <img src ="/bs1.jpg">
-                            </div>
-                            <p class ="desName">BS6 </p>
-                            <p class="desTitle"> 
-
-                                Nghiên cưu Da
-                            </p>
-
-                            <a href = "https://zalo.me/0914404450"  target="_blank">Trao đổi</a>
-                        </div>
+                       @endforeach
                      
                     </div>
                  

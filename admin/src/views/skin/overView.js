@@ -546,6 +546,30 @@ class Users extends Component {
     
   }
   
+  renderStatus= (inputStatus)=> {
+
+    if(inputStatus == "1")
+    {
+      return  "Đẹp";
+    }
+    if(inputStatus == "2")
+    {
+      return  "Trung bình";
+    }
+    if(inputStatus == "3")
+    {
+      return  "Xấu";
+    }
+    if(inputStatus == "4")
+    {
+      return  "Đẹp nhất";
+    }
+    if(inputStatus == "5")
+    {
+      return  "Xấu nặng";
+    }
+    return "";
+  }
   renderProductsSuggest(products,idSelect,idSelect2,name,activeCollapse,valueK){
     if(products){
       let x = products.map((item,i) => {
@@ -581,7 +605,7 @@ class Users extends Component {
                               </td>
                            
                               <td className="text-center">
-                                {item.Level === "1" ? "Nhẹ" : item.Level === "2" ? "Trung bình" : item.Level === "3" ? "Nặng" : "Không có"}
+                                {this.renderStatus(item.Level)}
                               </td>
                               {/* <td className="text-center">
                                 {Number(item.price).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')} đ
@@ -767,14 +791,25 @@ class Users extends Component {
 
     const arrLevel = [
       {
-        item : "1"
+        item : "1",
+        displayText: "Đẹp"
       },
       {
-        item : "2"
+        item : "2",
+        displayText: "Trung bình"
       },
       {
-        item : "3"
+        item : "3",
+        displayText: "Xấu"
       },
+      {
+        item : "4",
+        displayText: "Đẹp nhất"
+      },
+      {
+        item : "5",
+        displayText: "Xấu nặng"
+      }
     ];
    
     if (!this.state.isLoading) {
@@ -881,14 +916,14 @@ class Users extends Component {
                           if(item.item === this.state.updateLevel){
                             return (
                               <option selected key={i} value={item.item}>
-                                {item.item === "1" ? "Nhẹ" : item.item === "2" ? "Trung" : "Nặng"}
+                                {item.displayText}
                               </option>
                             );
                           }
                             else {
                             return (
                               <option key={i} value={item.item}>
-                                {item.item == "1" ? "Nhẹ" : item.item == "2" ? "Trung" : "Nặng"}
+                                   {item.displayText}
                               </option>
                             );
                           

@@ -144,6 +144,30 @@ const _navSoida = [
 ]
 
 
+const _chuyengiatuvan = [
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Chuyên gia tư vấn'],
+    role: ['0', '1', '2']
+  },
+ 
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Danh sách chuyên gia tư vấn',
+    to: '/danh-sach-chuyen-gia-tu-van/1',
+    icon: <CIcon style={css} content={freeSet.cilMoodVeryGood} customClasses="c-sidebar-nav-icon" />,
+    role: ['0', '1', '2'],
+    badge: {
+      color: 'info',
+      text: <CTooltip placement={"right"} content={content.suggest}>
+        <CIcon content={freeSet.cilBellExclamation} />
+      </CTooltip>,
+    },
+  },
+  
+  
+]
+
 
 const _navTuVanTongQuat = [
   {
@@ -634,4 +658,4 @@ const _naveUser = [
   
   ]
 
-export default [_navVendor, _naveUser,_navMinisize,_navTuVanTongQuat,_navSoida,_navDisplay, _navContact, _navLogOut  ]
+export default [_navVendor, _naveUser,_navMinisize,_navTuVanTongQuat,_chuyengiatuvan,_navSoida,_navDisplay, _navContact, _navLogOut  ]
