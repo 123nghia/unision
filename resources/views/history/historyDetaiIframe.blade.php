@@ -61,11 +61,188 @@
 
                     }
                 </style>
+
+
+<style>
+
+.toneColorSkin {
+    font-family: SFU Futura !important;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.titleColor {
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: rgb(70, 0, 221) !important;
+}
+.centerScreen {
+    text-align: center;
+}
+.toneColorSkin p {
+    font-weight: bold !important;
+    color: #1a214f;
+
+    line-height: 17px;
+}
+.toneColorSkin p span {
+    display: inline-block;
+    font-weight: bold !important;
+    color: red;
+}
+.title2 {
+    
+    color: rgb(70, 0, 221) !important;
+    display:block;
+
+}
+.descrptionSkinColor{
+    width: max-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.center-image {
+    width: 100%;
+    height: 240px;
+    background-color: #CC5500;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tuvantongquanItem  {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0b5963;
+    text-align: justify;
+
+
+}
+.tuvantongquanItem strong {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight : 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0b5963  !important;
+    text-align: justify;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .center-image {
+    
+    height: 225px !important;
+ 
+}
+.skincolor {
+    margin :auto;
+
+    width: 96px;
+    height: 96px !important;
+    background-color: red;
+   
+    border-radius: 50%;
+
+    transform:
+    perspective(75em)
+    rotateX(18deg);
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color:
+    rgb(213, 220, 226)
+    rgb(213, 220, 226)
+    rgb(184, 194, 204);
+   
+   
+}
+.center-image  canvas{
+     width: 130px;
+     height: 130px;
+
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+     border-radius: 50%;
+   
+}
+}
+   
+.center-image  canvas{
+     width: 160px;
+     height: 160px;
+
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+   
+}
+.skincolor {
+    margin :auto;
+
+    width: 80px;
+    height: 80px !important;
+    background-color: red;
+    border-radius: 50%;
+}
+.skincolor:hover {
+    opacity: 1;
+    border: 2px solid  black;
+   
+}
+.activeSkin {
+    opacity: 1;
+    border: 2px solid  black;
+}
+.skincolor:active {
+    opacity: 0.8;
+    border: 1px solid  black;
+   
+}
+.activeSkin {
+    opacity: 0.8;
+    border: 1px solid  black;
+}
+
+.navbarColor{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hideItem{
+    display: none;
+}
+.showItem {
+    display: block;
+}
+.text-center-box {
+    color: #0b5963 !important;
+}
+
+</style>
 @endsection
 @section('contentpage')
 
 <script>
     var dataInfo = {!! json_encode($data) !!};
+    var resultKL =  {!! json_encode($resultKlCT) !!}
 </script>
 <script> 
     

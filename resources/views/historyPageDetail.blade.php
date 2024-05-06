@@ -327,7 +327,7 @@
             </span>
            
         </div>
-        <span  id ="scoreAvg" class="score">  </span>  
+        <span style ="display:none"  id ="scoreAvg" class="score">  </span>  
     <div class="ai-skin__container">
          <div id="output">
                 <div class="ai-skin__result-top">

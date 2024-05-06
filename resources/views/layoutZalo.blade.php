@@ -585,9 +585,9 @@ position: relative;
 
 <div class="hadernav">
     <div class="title-header">
-        <span class="soida"> SOI DA </span>
-        <span class="online"> ONLINE </span>
-        <span class="ai">AI </span>
+        <span class="soida"> SOI DA ONLINE </span>
+        <span class="online">  KIỂU PHÁP </span>
+        <!-- <span class="ai">AI </span> -->
     </div>
 
     <div class="sologan">

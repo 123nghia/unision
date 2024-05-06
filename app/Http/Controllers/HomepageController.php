@@ -1588,7 +1588,10 @@ public function getDataInfo (Request $request)
                     
                     $isViewFrame =  true;
                     $agent = new Agent();
-                    return view("history.historyDetaiIframe",compact("data","agent", "slug", "companyGlobalId","dataUser","isViewFrame","agent" ));
+                    $companyId = $this->getCompanyId();
+                    $resultKlCT =  $this->getKLCT($companyId);
+                    return view("history.historyDetaiIframe",compact("data","agent", "resultKlCT",
+                     "slug", "companyGlobalId","dataUser","isViewFrame","agent" ));
                 } 
                 return  [
                     "is_success" =>false , 

@@ -235,7 +235,7 @@
            
         </div>
 
-        <span  id ="scoreAvg" class="score">  </span>  
+        <span style ="display:none"  id ="scoreAvg" class="score">  </span>  
 
         {{-- <div class="profilearea">
 
