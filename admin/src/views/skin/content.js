@@ -601,10 +601,10 @@ class Users extends Component {
                               <td className="text-center">
                                 {i + 1}
                               </td>
-                              <td className="text-center">
+                              {/* <td className="text-center">
                                 {item.Title}
                                  
-                              </td>
+                              </td> */}
                               {/* <td className="text-center">{item.name}</td> */}
                               {/* <td className="text-center">
                                
@@ -720,7 +720,7 @@ class Users extends Component {
                     <tr>
                       <th className="text-center">STT.</th>
                       {/* <th className="text-center">Tên</th> */}
-                      <th className="text-center">Tiêu đề</th>
+                      {/* <th className="text-center">Tiêu đề</th> */}
                       {/* <th className="text-center">Ảnh</th>
    */}
                       {/* <th className="text-center">Nội dung</th> */}
@@ -768,7 +768,7 @@ class Users extends Component {
                     <tr>
                       <th className="text-center">STT.</th>
                       {/* <th className="text-center">Tên</th> */}
-                      <th className="text-center">Tiêu đề</th>
+                      {/* <th className="text-center">Tiêu đề</th> */}
                       {/* <th className="text-center">Ảnh</th>
                       <th className="text-center">Nội dung</th> */}
   
