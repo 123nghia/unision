@@ -175,20 +175,6 @@ const _navTuVanTongQuat = [
     _children: ['QUẢN LÝ KẾT LUẬN VÀ CHI TIẾT'],
     role: ['0', '1', '2']
   },
-  
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Kết luận chi tiết',
-    to: '/skin/configContent',
-    icon: <CIcon style={css} content={freeSet.cilMoodVeryGood} customClasses="c-sidebar-nav-icon" />,
-    role: ['0', '1', '2'],
-    badge: {
-      color: 'info',
-      text: <CTooltip placement={"right"} content={content.suggest}>
-        <CIcon content={freeSet.cilBellExclamation} />
-      </CTooltip>,
-    },
-  },
   {
     _tag: 'CSidebarNavItem',
     name: 'Tư vấn tổng quát',

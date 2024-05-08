@@ -672,8 +672,58 @@ class SuggestItem extends Component {
     
   };
 
+  renderStatus= (inputStatus)=> {
+
+    if(inputStatus == "1")
+    {
+      return  "Đẹp";
+    }
+    if(inputStatus == "2")
+    {
+      return  "Trung bình";
+    }
+    if(inputStatus == "3")
+    {
+      return  "Xấu";
+    }
+    if(inputStatus == "4")
+    {
+      return  "Đẹp nhất";
+    }
+    if(inputStatus == "5")
+    {
+      return  "Xấu nặng";
+    }
+    return "";
+  }
+
   render() {
     const { data, arrPagination, arrLevel, arrOptionSdkType, key, action, isSearch, indexPage, arrOptionBrand, objectValueBrand } = this.state;
+
+
+    const arrLevel1 = [
+      {
+        item : "1",
+        displayText: "Đẹp"
+      },
+      {
+        item : "2",
+        displayText: "Trung bình"
+      },
+      {
+        item : "3",
+        displayText: "Xấu"
+      },
+      {
+        item : "4",
+        displayText: "Đẹp nhất"
+      },
+      {
+        item : "5",
+        displayText: "Xấu nặng"
+      }
+    
+    ];
     if (!this.state.isLoading) {
       return (
         <div className="animated fadeIn">
@@ -775,7 +825,9 @@ class SuggestItem extends Component {
                                       {item.type_sdk_id.Name}
                                     </td> */}
                                     <td className="text-center">
-                                      {item.name_level}
+                                
+                                      {  this.renderStatus(item.sdktype)}
+
                                     </td>
                                     {/* <td className="text-center">
                                       {Number(item.price).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')} đ
@@ -875,7 +927,9 @@ class SuggestItem extends Component {
                   <div style={{ width: "100%" }} className="mt-3">
                     <CLabel>Loại SDK:</CLabel>
                     <CSelect onChange={async e => {
-                      this.setState({ type_sdk_id: e.target.value.split("/")[0], arrLevel: JSON.parse(e.target.value.split("/")[1]) })
+                      this.setState({ type_sdk_id: e.target.value.split("/")[0], 
+                      
+                      arrLevel: JSON.parse(e.target.value.split("/")[1]) })
                     }} custom size="sm" name="selectSm" id="SelectLm">
                       {
                         arrOptionSdkType.map((item, i) => {
@@ -901,17 +955,17 @@ class SuggestItem extends Component {
                   arrLevel != undefined ? (
                     <CSelect onChange={async e => { this.changeLevel(e) }} custom size="sm" name="selectSm" id="SelectLm">
                       {
-                        arrLevel.map((item, i) => {
-                          if (item == this.state.sdktype) {
+                        arrLevel1.map((item, i) => {
+                          if (item.item == this.state.sdktype) {
                             return (
-                              <option selected key={i} value={item}>
-                                {item == "1" ? "Nhẹ" : item == "2" ? "Trung" : "Nặng"}
+                              <option selected key={i} value={item.item} >
+                                 {item.displayText}
                               </option>
                             );
                           } else {
                             return (
-                              <option key={i} value={item}>
-                                {item == "1" ? "Nhẹ" : item == "2" ? "Trung" : "Nặng"}
+                              <option key={i} value={item.item} >
+                                  {item.displayText}
                               </option>
                             );
                           }

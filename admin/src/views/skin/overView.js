@@ -592,17 +592,7 @@ class Users extends Component {
                                  
                               </td> */}
                               {/* <td className="text-center">{item.name}</td> */}
-                              <td className="text-center">
-                               
-                                  <img
-                                    src={`${item.Icon}`}
-                                 
-                                    height={"100px"}
-                                    alt=""
-                                  />
-                              
-                                
-                              </td>
+                        
                            
                               <td className="text-center">
                                 {this.renderStatus(item.Level)}
@@ -699,7 +689,7 @@ class Users extends Component {
                       <th className="text-center">STT.</th>
                       {/* <th className="text-center">Tên</th> */}
                       {/* <th className="text-center">Tiêu đề</th> */}
-                      <th className="text-center">Ảnh</th>
+                     
   
                   
                    
@@ -747,7 +737,6 @@ class Users extends Component {
                       <th className="text-center">STT.</th>
                       {/* <th className="text-center">Tên</th> */}
                       <th className="text-center">Tiêu đề</th>
-                      <th className="text-center">Ảnh</th>
                     
   
                       {/* <th className="text-center">Chi tiết</th> */}
