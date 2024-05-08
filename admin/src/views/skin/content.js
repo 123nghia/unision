@@ -719,18 +719,9 @@ class Users extends Component {
                   <thead className="thead-light">
                     <tr>
                       <th className="text-center">STT.</th>
-                      {/* <th className="text-center">Tên</th> */}
-                      {/* <th className="text-center">Tiêu đề</th> */}
-                      {/* <th className="text-center">Ảnh</th>
-   */}
-                      {/* <th className="text-center">Nội dung</th> */}
-                  
-                      {/* <th className="text-center">Thương hiệu</th> */}
-                      {/* <th className="text-center">Ảnh thương hiệu</th> */}
-                      {/* <th className="text-center">Loại</th>
-                      <th className="text-center">Loại SDK </th> */}
+                     
                       <th className="text-center">Mức độ</th>
-                      {/* <th className="text-center">Giá</th> */}
+               
                       <th className="text-center">#</th>
                     </tr>
                   </thead>
@@ -767,18 +758,9 @@ class Users extends Component {
                   <thead className="thead-light">
                     <tr>
                       <th className="text-center">STT.</th>
-                      {/* <th className="text-center">Tên</th> */}
-                      {/* <th className="text-center">Tiêu đề</th> */}
-                      {/* <th className="text-center">Ảnh</th>
-                      <th className="text-center">Nội dung</th> */}
-  
-                      {/* <th className="text-center">Chi tiết</th> */}
-                      {/* <th className="text-center">Thương hiệu</th> */}
-                      {/* <th className="text-center">Ảnh thương hiệu</th> */}
-                      {/* <th className="text-center">Loại</th>
-                      <th className="text-center">Loại SDK </th> */}
+                     
                       <th className="text-center">Mức độ</th>
-                      {/* <th className="text-center">Giá</th> */}
+                    
                       <th className="text-center">#</th>
                     </tr>
                   </thead>
@@ -843,9 +825,10 @@ class Users extends Component {
           <div class="accordion" id="accordionExample">
             {this.renderProductsSuggest(this.state.listK5,"headingOne","collapser1","Hỗ trợ giảm lão hóa da",true,"K5")}
             {this.renderProductsSuggest(this.state.listK6,"headingTwo","collapser2","Hỗ trợ điều trị mụn",false,"K6")}
+            {this.renderProductsSuggest(this.state.listK9,"headingFive","collapser5","Hỗ trợ giảm thâm nám da",false,"K9")}
             {this.renderProductsSuggest(this.state.listK7,"headingThree","collapser3","Hỗ trợ giảm quầng thâm mắt",false,"K7")}
             {this.renderProductsSuggest(this.state.listK8,"headingFour","collapser4","Hỗ trợ giảm lỗ chân lông",false,"K8")}
-            {this.renderProductsSuggest(this.state.listK9,"headingFive","collapser5","Hỗ trợ giảm thâm nám da",false,"K9")}
+         
                                   
           </div>
     
