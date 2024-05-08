@@ -771,7 +771,7 @@ class SuggestItem extends Component {
                             {/* <th className="text-center">Tên</th> */}
                             <th className="text-center">Tiêu đề</th>
                             <th className="text-center">Ảnh</th>
-                            <th className="text-center">Mô tả</th> 
+                           
                             <th className="text-center">Link sản phẩm</th>
                             <th className="text-center">Thương hiệu</th>
                            
@@ -802,9 +802,7 @@ class SuggestItem extends Component {
                                           <img src={`https://soida-api.placentor.com.vn/public/image_plugin/${item.image_link}`} width={"60px"} height={"60px"} />
                                       }
                                     </td>
-                                    <td className="text-center">
-                                        {item.description}
-                                    </td>
+                                
        
                                     <td className="text-center">
                                       <a target="_blank" href={item.linkdetail}>Xem chi tiết sản phẩm</a>
@@ -953,7 +951,7 @@ class SuggestItem extends Component {
                 <CLabel>Mức độ:</CLabel>
                 {
                   arrLevel != undefined ? (
-                    <CSelect onChange={async e => { this.changeLevel(e) }} custom size="sm" name="selectSm" id="SelectLm">
+                    <CSelect onChangace={async e => { this.changeLevel(e) }} custom size="sm" name="selectSm" id="SelectLm">
                       {
                         arrLevel1.map((item, i) => {
                           if (item.item == this.state.sdktype) {
