@@ -369,6 +369,8 @@ class SuggestItem extends Component {
   };
 
   changeLevel = (e) => {
+    
+   
     e.preventDefault();
     this.setState({
       sdktype: e.target.value,
@@ -922,7 +924,7 @@ class SuggestItem extends Component {
 
               {
                 action == "new" ? "" :
-                  <div style={{ width: "100%" }} className="mt-3">
+                  <div style={{ display: "none", width: "100%" }} className="mt-3">
                     <CLabel>Loại SDK:</CLabel>
                     <CSelect onChange={async e => {
                       this.setState({ type_sdk_id: e.target.value.split("/")[0], 
@@ -951,7 +953,7 @@ class SuggestItem extends Component {
                 <CLabel>Mức độ:</CLabel>
                 {
                   arrLevel != undefined ? (
-                    <CSelect onChangace={async e => { this.changeLevel(e) }} custom size="sm" name="selectSm" id="SelectLm">
+                    <CSelect onChange={async e => { this.changeLevel(e) }} custom size="sm" name="selectSm" id="SelectLm">
                       {
                         arrLevel1.map((item, i) => {
                           if (item.item == this.state.sdktype) {
