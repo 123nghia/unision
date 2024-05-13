@@ -386,10 +386,10 @@ $fileCamera =  $bannerPage->imageHomepage;
 
 
                     </div>
-                    <div class="text">
-                                                <a href="javascript:void(0)" onclick="haldleOpenCamera()">Soi da ngay
-                        </a>
-                                            </div>
+                        <div class="text">
+                                                    <a href="javascript:void(0)" onclick="haldleOpenCamera()">Soi da ngay
+                            </a>
+                    </div>
                 </div>
                 
 
@@ -399,9 +399,9 @@ $fileCamera =  $bannerPage->imageHomepage;
             </div>
             <div class="description-text">
                 <p>Ảnh tự chụp của bạn sẽ được phân tích bởi công nghệ AI trí tuệ nhân tạo</p>
-                <p>Để có kết quả nhất quán theo thời gian, chúng tôi khuyên bạn nên chụp ảnh tự sướng bằng điện thoại thông
+                <p>Để có kết quả nhất quán theo thời gian, chúng tôi khuyên bạn nên chụp  ảnh selfie bằng điện thoại thông
                     minh thế hệ cuối cùng. Chúng tôi khuyến khích bạn sử dụng cùng một máy ảnh và các điều kiện ánh sáng
-                    tương tự. Vui lòng tham khảo hướng dẫn chụp ảnh tự sướng để biết các điều kiện phân tích tối ưu.</p>
+                    tương tự. Vui lòng tham khảo hướng dẫn chụp  ảnh selfie để biết các điều kiện phân tích tối ưu.</p>
             </div>
 
 
@@ -1454,6 +1454,12 @@ $fileCamera =  $bannerPage->imageHomepage;
         }
 
         function choseImage() {
+            if(!isLogin)
+            {
+                ToggleDisplayLogin('.status-modal-account',true,'Để tiếp tục soi da');
+                return;
+            }
+
           
             setTimeout(() => {
                 $("#choseImageFile").click();
@@ -1520,6 +1526,12 @@ $fileCamera =  $bannerPage->imageHomepage;
         }
 
         function haldleOpenCamera() {
+            if(!isLogin)
+            {
+                ToggleDisplayLogin('.status-modal-account',true,'Để tiếp tục soi da');
+                return;
+            }
+         
             opencamera();
             return;
             // hideTips();

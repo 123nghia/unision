@@ -579,6 +579,7 @@ function ToggleDisplayClass(myClass, status) {
     //    title = 'Để Xem kết luận chi tiết & tư vấn tổng quát';
     //    typeLogin ="2";
     // }
+    typeLogin ="3";
     if( lastSegement == "ket-qua" )
     {
        title = title;
@@ -605,6 +606,7 @@ function ToggleDisplayClass(myClass, status) {
     {
         $("#titleLogin").html(title);
     }
+  
     var urlUpdate = api.serve.baser_urlServer + "/" + "typeLogin/setType";
   
     $.ajax({
