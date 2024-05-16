@@ -569,68 +569,66 @@ function ToggleDisplayClass(myClass, status) {
   }
 
   function ToggleDisplayLogin(myClass, status, title = '') {
-  
+          var lastSegement = window.location.pathname.split("/").pop();
 
-    var lastSegement = window.location.pathname.split("/").pop();
+          var typeLogin = null;
+          // if( lastSegement == "ket-qua" )
+          // {
+          //    title = 'Để Xem kết luận chi tiết & tư vấn tổng quát';
+          //    typeLogin ="2";
+          // }
+          typeLogin ="3";
+          if( lastSegement == "ket-qua" )
+          {
+            title = title;
+            typeLogin ="2";
+          }
+        
 
-    var typeLogin = null;
-    // if( lastSegement == "ket-qua" )
-    // {
-    //    title = 'Để Xem kết luận chi tiết & tư vấn tổng quát';
-    //    typeLogin ="2";
-    // }
-    typeLogin ="3";
-    if( lastSegement == "ket-qua" )
-    {
-       title = title;
-       typeLogin ="2";
-    }
-  
+          if(title =="Để xem Nhật ký")
+          {
+            typeLogin ="3";
+          }
 
-    if(title =="Để xem Nhật ký")
-    {
-      typeLogin ="3";
-    }
+          if(title =="Để tư vấn da ngay & 100% Miễn Phí")
+          {
+            typeLogin ="1";
+          }
 
-    if(title =="Để tư vấn da ngay & 100% Miễn Phí")
-    {
-      typeLogin ="1";
-    }
+          if(title =="Để tư vấn da ngay & 100% Miễn Phí")
+          {
+            typeLogin ="1";
+          }
 
-    if(title =="Để tư vấn da ngay & 100% Miễn Phí")
-    {
-      typeLogin ="1";
-    }
-
-    if( title != '')
-    {
-        $("#titleLogin").html(title);
-    }
-  
-    var urlUpdate = api.serve.baser_urlServer + "/" + "typeLogin/setType";
-  
-    $.ajax({
-      type: "post",
-      url: urlUpdate,
-      data: {
-        typeLogin: typeLogin
-      },
-  
-      success: function (data) {
-        if (data.is_success) {         
-        }
-      },
-      error: function (data) {},
-    });
+          if( title != '')
+          {
+              $("#titleLogin").html(title);
+          }
+        
+          var urlUpdate = api.serve.baser_urlServer + "/" + "typeLogin/setType";
+        
+          $.ajax({
+            type: "post",
+            url: urlUpdate,
+            data: {
+              typeLogin: typeLogin
+            },
+        
+            success: function (data) {
+              if (data.is_success) {         
+              }
+            },
+            error: function (data) {},
+          });
 
 
-      if (document.querySelector(myClass)) {
-        if (status) {
-          document.querySelector(myClass).style.display = "block";
-        } else {
-          document.querySelector(myClass).style.display = "none";
-        }
-      }
+            if (document.querySelector(myClass)) {
+              if (status) {
+                document.querySelector(myClass).style.display = "block";
+              } else {
+                document.querySelector(myClass).style.display = "none";
+              }
+            }
   }
 
   function ToggleDisplayLogin2(myClass, status, title = '') {
@@ -913,3 +911,153 @@ function ToggleDisplayFormFollow3(myClass, status) {
       });
     }
 
+
+    function validateFormRegisterShop () 
+{
+
+    var indexError = 0;
+
+    var formInput = $("#formRegisterShop")[0];
+    var shopNameInput =formInput.getElementsByClassName("shopName")[0];
+    var errorMessageUserName =formInput.getElementsByClassName("errorMessageshopName")[0];
+
+    if( shopNameInput.value =="" || shopNameInput.value.length <1)
+    {
+        errorMessageUserName.textContent =  "Bạn chưa nhập tên shp";
+
+        errorMessageUserName.style.display = "block";
+        indexError ++;
+    }
+    else 
+    {
+        errorMessageUserName.style.display = "none";
+    }
+
+
+
+    var passwordInput =formInput.getElementsByClassName("passwordInput")[0];
+    var errorMessagepasswordInput =formInput.getElementsByClassName("errorMessagepasswordInput")[0];
+
+    if( passwordInput.value =="" || passwordInput.value.length <1)
+    {
+      errorMessagepasswordInput.textContent =  "Bạn chưa nhập mật khẩu";
+
+      errorMessagepasswordInput.style.display = "block";
+        indexError ++;
+    }
+    else 
+    {
+      errorMessagepasswordInput.style.display = "none";
+    }
+
+
+
+    var passRepeat =formInput.getElementsByClassName("passRepeat")[0];
+    var errorMessagepassRepeat =formInput.getElementsByClassName("errorMessagepassRepeat")[0];
+
+    if( passRepeat.value =="" || passRepeat.value.length <1)
+    {
+      errorMessagepassRepeat.textContent =  "Bạn chưa xác nhận mật khẩu";
+
+      errorMessagepassRepeat.style.display = "block";
+        indexError ++;
+    }
+    else 
+    {
+      errorMessagepassRepeat.style.display = "none";
+    }
+
+
+    
+    var PhoneShop =formInput.getElementsByClassName("PhoneShop")[0];
+    var errorMessagePhoneShop =formInput.getElementsByClassName("errorMessagePhoneShop")[0];
+
+    if( PhoneShop.value =="" || PhoneShop.value.length <1)
+    {
+      errorMessagePhoneShop.textContent =  "Bạn chưa xác nhận mật khẩu";
+
+        errorMessagePhoneShop.style.display = "block";
+        indexError ++;
+    }
+    else 
+    {
+      errorMessagePhoneShop.style.display = "none";
+    }
+
+
+
+    var selectPackage =formInput.getElementsByClassName("selectPackage")[0];
+    var errorMessageselectPackage =formInput.getElementsByClassName("errorMessageselectPackage")[0];
+
+    if( selectPackage.value =="" || selectPackage.value.length <1)
+    {
+      errorMessageselectPackage.textContent =  "Chưa đăng ký gói";
+
+      errorMessageselectPackage.style.display = "block";
+        indexError ++;
+    }
+    else 
+    {
+      errorMessageselectPackage.style.display = "none";
+    }
+
+
+
+    var selectPackage =formInput.getElementsByClassName("selectLinhVuc")[0];
+    var errorMessageselectLinhVuc =formInput.getElementsByClassName("errorMessageselectLinhVuc")[0];
+
+    if( selectPackage.value =="" || selectPackage.value.length <1)
+    {
+      errorMessageselectLinhVuc.textContent =  "Chưa chọn lĩnh vực";
+
+      errorMessageselectLinhVuc.style.display = "block";
+        indexError ++;
+    }
+    else 
+    {
+      errorMessageselectLinhVuc.style.display = "none";
+    }
+
+
+
+    return indexError <1;
+}
+
+
+    function RegisterShop()
+    {
+
+      validateFormRegisterShop();
+      return;
+
+      var body = {
+          shopName :  $("#txtShopName").val(),
+          shopPass:  $("#txtPasss").val(),
+          phoneShop:  $("#txtPhoneShop").val(),
+          packageId:  $("#selectPackage").val(),
+          linhvucId:  $("#selectLinhVuc").val(),
+      };
+      $.ajaxSetup({
+        headers: {
+          "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+        },
+      });
+       $.ajax({
+        url: api.serve.baser_urlServer + "/" + api.serve.get_api_soida,
+        type: "POST",
+        data: body,
+        success: function(secondResponse) {
+            if (secondResponse.is_success) {
+            }
+         
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+           
+        },
+        complete: function() {
+        
+        },
+        timeout: 30000
+    });
+  
+  }

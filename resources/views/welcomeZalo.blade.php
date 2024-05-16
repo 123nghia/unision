@@ -63,6 +63,8 @@ $fileCamera =  $bannerPage->imageHomepage;
 @extends('layoutZalo')
 
 @section('header')
+
+
     <meta charset="UTF-8">
     <meta name="theme-color" content="#d47690">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -108,6 +110,12 @@ $fileCamera =  $bannerPage->imageHomepage;
 @endsection
 @section('contentpage')
 
+@include('formRegisterShop.form')
+<div>
+    <button id="selectFile" style ="display:none" >Select</button>
+
+
+</div>
 <a  id ="messenger" style ="display:none"  href="https://m.me/106007668343244?ref=mess" target="_blank"><div style="position:fixed;bottom:170px;right:30px; z-index:1000" class="messenger"><noscript>
     <img style="height:58px;" src="/tikiFacebook.png"/></noscript>
     <img class=" lazyloaded" style="height:58px;" src="/tikiFacebook.png" data-src="/tikiFacebook.png"></div>
@@ -150,6 +158,38 @@ $fileCamera =  $bannerPage->imageHomepage;
     <script>
         var slugGlobal = {!! json_encode($slug) !!};
     </script>
+
+    <script>
+
+function click(el) {
+  // Simulate click on the element.
+  var evt = document.createEvent('Event');
+  evt.initEvent('click', true, true);
+  el.dispatchEvent(evt);
+}
+
+
+document.querySelector('#selectFile').addEventListener('click', function(e) {
+     var imageShow1 = document.getElementById("imageShow");
+     imageShow1.removeAttribute("src");
+     imageShow1.removeAttribute("src");
+
+    var skinImage1 = document.getElementById("skinImage");
+    skinImage1.classList.remove("ai-skin__skin-image--inactive");
+    skinImage1.classList.add("ai-skin__skin-image--active");
+    var  videoPlayer1 = document.getElementById("videoPlayer");
+    videoPlayer1.style.display = "none";
+    var uploadBtn1 = document.getElementById("uploadBtn");
+    uploadBtn1.style.display = "block";
+    var uploadBtn1 = document.getElementById("uploadBtn");
+    uploadBtn1.classList.remove("ai-skin__button--disabled");
+    $(".nav-menu").hide();
+                
+  var fileInput = document.querySelector('#localImageInput');
+  //click(fileInput); // Simulate the click with a custom event.
+  fileInput.click(); // Or, use the native click() of the file input.
+}, false);
+        </script>
     <div id="b-placeholder">
 
 
@@ -174,6 +214,7 @@ $fileCamera =  $bannerPage->imageHomepage;
                         <input type="button" onclick="choseImage()" class="upload-file">
                         <div class="icn"><img src="./assets/choseImage.svg" alt="" class="selfie"></div>
                         <div class="txt">Chọn ảnh</div>
+                        <input  id ="localImageInput" type="file" name="file"  style="visibility:hidden; width:0; height:0">
                     </div>
 
                 </div>
@@ -195,7 +236,8 @@ $fileCamera =  $bannerPage->imageHomepage;
                         <span>
                             Chọn ảnh
                             <img data-src="contain/img/icons/photo.svg" src="/img/icons/photo.svg">
-                            <input type="file" name="file" id="localImageInput" accept="image/*" hidden="">
+                           
+                        
                         </span>
                     </button>
 
@@ -395,7 +437,7 @@ $fileCamera =  $bannerPage->imageHomepage;
 
             </div>
             <div class=" startPage-boldTitle" style="margin-top: 90px">
-                {{-- HÌNH ẢNH CỦA BẠN SẼ ĐƯỢC XOÁ NGAY SAU KHI HẾT PHÂN TÍCH --}}
+             
             </div>
             <div class="description-text">
                 <p>Ảnh tự chụp của bạn sẽ được phân tích bởi công nghệ AI trí tuệ nhân tạo</p>
@@ -667,7 +709,8 @@ $fileCamera =  $bannerPage->imageHomepage;
                     toggleUploadBtn((show = true));
                     enableUploadBtn();
                     $(".nav-menu").hide();
-                    localImageInput.click();
+                
+
 
                 }
 
@@ -1440,9 +1483,9 @@ $fileCamera =  $bannerPage->imageHomepage;
         window.addEventListener("popstate", router);
 
         document.addEventListener("DOMContentLoaded", function() {
-            //     
-            //     sessionStorage.setItem('dataCompany', JSON.stringify(dataCompany));
-            //
+         
+            
+            document.querySelector(".formRegisterShop").style.display = "block";
         });
     </script>
 
@@ -1460,6 +1503,8 @@ $fileCamera =  $bannerPage->imageHomepage;
                 return;
             }
 
+            $("#selectFile").click();
+            return;
           
             setTimeout(() => {
                 $("#choseImageFile").click();

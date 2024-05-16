@@ -226,7 +226,7 @@
 
                                         </div>
 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-60" style ="display:none">
 
                                             <label for="exampleInputEmail1">Công ty: <span class="requiredTip"> (*) </span></label>
                                            
